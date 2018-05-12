@@ -6,15 +6,10 @@ import datetime
 print(requests)
 
 
-
-
-
-
-
-
 def open_csv():
     with open('sources.csv', "rw") as csv_file:
         pass
+
 
 def give_link():
     global link
@@ -26,11 +21,8 @@ def open_link(link):
     print(page)
 
 
-
-
-
 running = True
-while running: 
+while running:
     give_link()
     open_link(link)
     running = False

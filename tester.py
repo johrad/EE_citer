@@ -12,21 +12,13 @@ def get_action():
         B) The latest link
         C) Titles only\n>""").lower()
 
-        if action == "a":
-            print("do this")
-            break
-        elif action == "b":
-            print("do this")
-            break
-        elif action == "c":
-            print("do this")
+        if action in ("a", "b", "c"):
             break
         else:
             print("Sorry, I don\'t understand what \'{}\' means, please try again\n".format(
                 action))
 
 
-action = "a"
 n = 2
 
 
@@ -42,7 +34,7 @@ def read_csv():
                 print(line[2])
         elif action == "b":
             for line in csv_reader:
-                print(row[2]line[2])
+                print(row[2])
 
         else:
             print("wtf")
@@ -50,4 +42,5 @@ def read_csv():
     #     csv_writer = csv_writer(csv_write)
 
 
+get_action()
 read_csv()
